@@ -1,2 +1,10 @@
 # Allow system_server to access richtapresources
 r_dir_file(system_server, vendor_richtap_resources)
+
+# Allow system_server to access WFD info property
+get_prop(system_server, vendor_wfd_sys_prop)
+
+# Dontaudit harmless denials from CachedAppOptimizer / vendor properties
+dontaudit system_server vndbinder_device:chr_file { write open };
+dontaudit system_server audioserver_tmpfs:file write;
+dontaudit system_server vendor_default_prop:file read;

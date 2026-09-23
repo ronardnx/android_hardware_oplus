@@ -1,0 +1,2 @@
+# Allow zygote to check if pihooks should be disabled
+get_prop(zygote, pih_disable_prop)

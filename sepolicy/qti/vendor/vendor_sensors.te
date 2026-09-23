@@ -4,3 +4,7 @@ rw_dir_file(vendor_sensors, vendor_proc_eng_cali_file)
 rw_dir_file(vendor_sensors, vendor_proc_oplus_version)
 rw_dir_file(vendor_sensors, vendor_sysfs_sensor_fb)
 rw_dir_file(vendor_sensors, vendor_sysfs_sensor_tap)
+
+get_prop(vendor_sensors, vendor_qc_aon_prop)
+get_prop(vendor_sensors_qesdk, vendor_qc_aon_prop)
+
