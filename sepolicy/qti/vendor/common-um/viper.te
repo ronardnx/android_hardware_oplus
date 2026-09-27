@@ -1,0 +1,2 @@
+# ViPER4Android Audio Effect SEPolicy
+allow hal_audio_default hal_audio_default:process { execmem };
