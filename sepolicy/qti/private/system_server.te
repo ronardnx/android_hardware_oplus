@@ -8,3 +8,6 @@ get_prop(system_server, vendor_wfd_sys_prop)
 dontaudit system_server vndbinder_device:chr_file { write open };
 dontaudit system_server audioserver_tmpfs:file write;
 dontaudit system_server vendor_default_prop:file read;
+
+# Allow system_server to adjust sched priority for priv_app (OomAdjuster)
+allow system_server priv_app:process setsched;
