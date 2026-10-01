@@ -6,3 +6,7 @@ get_prop(platform_app, usb_uvc_enabled_prop)
 
 # Allow SystemUI to read Bluetooth LE Audio property
 get_prop(platform_app, bluetooth_lea_prop)
+
+# Allow ColorOS gallery to read touch prop and communicate with horae
+get_prop(platform_app, system_oplus_touch_prop)
+binder_call(platform_app, horae)
