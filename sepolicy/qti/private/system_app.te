@@ -1,0 +1,5 @@
+# Allow GameSpace to find game_space_service
+allow system_app game_space_service:service_manager find;
+
+# Allow system_app to read touch prop
+get_prop(system_app, system_oplus_touch_prop)
