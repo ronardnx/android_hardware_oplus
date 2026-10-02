@@ -1,1 +1,2 @@
 binder_call(servicemanager, vendor_hal_poweroptservice_qti)
+r_dir_file(vendor_hal_poweroptservice_qti, system_server)
